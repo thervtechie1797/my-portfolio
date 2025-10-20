@@ -127,6 +127,9 @@ Add a new object in the projects array:
 }
 
 
+Video Link: https://lnkd.in/eCMHc8uy
+
+
 The new project will automatically appear in the grid with the modal.
 
 📱 Responsive Design
