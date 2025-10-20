@@ -17,11 +17,11 @@ const projects = [
     id: 2,
     title: "Flight Booking Application",
     description: "Real-time flight booking app using Node.js and MonogoDB.",
-    link: "https://github.com/thervtechie1797/weather-app",
+    link: "https://github.com/thervtechie1797/Flight_Booking_System",
     image: "/src/assets/images/flightBooking.webp",
     tech: ["Node", "API", "Express", "MongoDB", "Mongoose", "Postman"],
     details:
-      "Fetches live weather data from OpenWeatherMap API. Features dynamic backgrounds based on weather conditions and responsive layout for mobile and desktop.",
+      "Built with Node.js for the backend and HTML, CSS, and JavaScript for the frontend, this system simulates a real-world flight reservation platform.",
   },
   {
     id: 3,

@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import emailjs from "@emailjs/browser"
 import Container from '../layout/Container'
+import MessageGenerator from '../genAI/MessageGenerator'
 
 
 const Contact = () => {
@@ -17,6 +18,7 @@ const Contact = () => {
       .then(()=> {
         alert("Message sent successfully!");
         e.target.reset();
+        setMessage("");
       }).catch((err)=> {
         console.error(err);
         alert("Failed to send message. Please try again later.");
@@ -96,6 +98,8 @@ const Contact = () => {
             placeholder='Enter your email' 
             className='w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-blue-400 transition' />
           </div>
+
+          <MessageGenerator onMsgGenerated={(msg)=> setMessage(msg)} />
           
           <div>
             <label className='block text-gray-800 font-medium mb-2' htmlFor='message'>
