@@ -5,6 +5,9 @@ import Home from "./components/sections/Home"
 import About from "./components/sections/About"
 import Projects from "./components/sections/Projects"
 import Contact from "./components/sections/Contact"
+import ChatBot from "./components/genAI/ChatBot"
+
+
 function App() {
 
 
@@ -21,6 +24,9 @@ function App() {
           </Routes>
         </main>
         <Footer />
+
+        {/* Floating ChatBot  */}
+        <ChatBot/>
       </Router>
     </div>
   )
